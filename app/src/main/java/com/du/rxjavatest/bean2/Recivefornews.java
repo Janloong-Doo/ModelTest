@@ -16,10 +16,10 @@ import java.util.ArrayList;
 @AutoValue
 public abstract class Recivefornews implements Parcelable {
     @SerializedName("error_code")
-   public abstract String recivecode();
+    public abstract String recivecode();
 
     @SerializedName("reason")
-   public abstract String reasonname();
+    public abstract String reasonname();
 
     @SerializedName("result")
     public abstract Newsresult newsresult();
@@ -45,7 +45,7 @@ public abstract class Recivefornews implements Parcelable {
      * 请求数据实体
      */
     @AutoValue
-    public abstract static class Newsresult implements Parcelable{
+    public abstract static class Newsresult implements Parcelable {
 
         @SerializedName("stat")
         public abstract String yeshuma();
@@ -72,7 +72,7 @@ public abstract class Recivefornews implements Parcelable {
          * 请求新闻实体
          */
         @AutoValue
-        public abstract static class Newsdetail implements Parcelable{
+        public abstract static class Newsdetail implements Parcelable {
             @SerializedName("author_name")
             public abstract String author();
 
