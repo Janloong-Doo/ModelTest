@@ -1,22 +1,16 @@
 package com.du.rxjavatest.utils;
 
 import com.du.rxjavatest.bean.DataItem;
-import com.du.rxjavatest.bean.Recivefornews;
 import com.du.rxjavatest.bean.Responsefornews;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.TypeAdapter;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheMode;
 import com.lzy.okgo.callback.StringCallback;
 import com.lzy.okgo.model.HttpParams;
 
-import java.io.IOException;
-
 import okhttp3.Call;
 import okhttp3.Response;
-
-import static android.R.attr.type;
 
 /**
  * Created by Administrator on 2017/2/2.

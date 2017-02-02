@@ -1,4 +1,4 @@
-package com.du.rxjavatest.bean;
+package com.du.rxjavatest.bean2;
 
 import android.os.Parcelable;
 import android.support.annotation.Nullable;
@@ -34,11 +34,11 @@ public abstract class Recivefornews implements Parcelable {
     }
 
     public static TypeAdapter<Recivefornews> typeAdapter(Gson gson) {
-        return new AutoValue_Recivefornews.GsonTypeAdapter(gson);
+        return new $AutoValue_Recivefornews.GsonTypeAdapter(gson);
     }
 
     public static Builder builder() {
-        return new AutoValue_Recivefornews.Builder();
+        return new $$AutoValue_Recivefornews.Builder();
     }
 
     /**
@@ -61,11 +61,11 @@ public abstract class Recivefornews implements Parcelable {
         }
 
         public static TypeAdapter<Newsresult> typeAdapter(Gson gson) {
-            return new AutoValue_Recivefornews_Newsresult.GsonTypeAdapter(gson);
+            return new $AutoValue_Recivefornews_Newsresult.GsonTypeAdapter(gson);
         }
 
         public static Builder builder() {
-            return new AutoValue_Recivefornews_Newsresult.Builder();
+            return new $$AutoValue_Recivefornews_Newsresult.Builder();
         }
 
         /**
@@ -117,11 +117,11 @@ public abstract class Recivefornews implements Parcelable {
 
 
             public static TypeAdapter<Newsdetail> typeAdapter(Gson gson) {
-                return new AutoValue_Recivefornews_Newsresult_Newsdetail.GsonTypeAdapter(gson);
+                return new $AutoValue_Recivefornews_Newsresult_Newsdetail.GsonTypeAdapter(gson);
             }
 
             public static Builder builder() {
-                return new AutoValue_Recivefornews_Newsresult_Newsdetail.Builder();
+                return new $$AutoValue_Recivefornews_Newsresult_Newsdetail.Builder();
             }
 
             @AutoValue.Builder
