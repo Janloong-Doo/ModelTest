@@ -16,8 +16,13 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"/>
     <Button
-        android:clickable="true"
         android:id="@+id/whatfuck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="访问"
+        />
+    <Button
+        android:id="@+id/getrx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="访问"

@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     Button whatfuck;
+    Button getrx;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        getRxjava();
 
         whatfuck = (Button) findViewById(R.id.whatfuck);
+        getrx = (Button) findViewById(R.id.getrx);
         whatfuck.setOnClickListener(this);
+        getrx.setOnClickListener(this);
     }
 
     public void getRxjava() {
@@ -41,9 +44,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.whatfuck:
-                System.out.println("点击了");
                 OkGoUtils.get();
                 break;
+            case R.id.getrx:
+                OkGoUtils.getbyRx();
+                break;
+
         }
     }
 }
