@@ -6,11 +6,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.du.rxjavatest.fragment.Myfragment;
 import com.du.rxjavatest.utils.OkGoUtils;
+import com.jakewharton.threetenabp.AndroidThreeTen;
+
+import org.threeten.bp.LocalDateTime;
+import org.threeten.bp.ZonedDateTime;
 
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -48,8 +54,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.getrx:
                 OkGoUtils.getbyRx();
+
                 break;
 
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
+    public void testforException() {
+        LocalDateTime now1 = LocalDateTime.now();
+
+
+        ZonedDateTime now = ZonedDateTime.now();
     }
 }

@@ -2,6 +2,7 @@ package com.du.rxjavatest.base;
 
 import android.app.Application;
 
+import com.jakewharton.threetenabp.AndroidThreeTen;
 import com.lzy.okgo.OkGo;
 
 /**
@@ -14,6 +15,7 @@ public class Myapplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        AndroidThreeTen.init(this);
         if (myapplication == null) {
             myapplication = this;
         }
